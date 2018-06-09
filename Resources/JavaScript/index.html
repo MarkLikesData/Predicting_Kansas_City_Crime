@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KC Crime</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/slate/bootstrap.min.css">
+
+    <!-- Leaflet CSS & JS for Map-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
+    <script type="text/javascript" src="./leaflet-heat.js"></script>
+    <!-- <script type="text/javascript" src="./map/leaflet-heat.js"></script> -->
+
+    <!--D3 cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+
+    <!-- Our CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Plotly JS for Line & Pie Charts-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+
+</head>
+
+<body>
+    <div id="title" class="text-center">
+        <h3>KC Crime Heatmap</h3>
+    </div>
+
+    <div id="row1" class="row">
+
+
+        <div id="map-area" class="col-md-12">
+            <div class="card">
+                <div class="card-body" style="height: 48rem">
+                    <div id="map" style="height: 40rem; position: relative;" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="logic2.js"></script>
+        
+</body>
+
+</html>
